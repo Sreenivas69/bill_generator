@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generated Bill</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+    <h2 class="mb-4">Generated Bill</h2>
+    <table class="table">
+        <tr>
+            <th>Customer</th>
+            <td>{{ customer }}</td>
+        </tr>
+        <tr>
+            <th>Items</th>
+            <td>{{ items }}</td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <td><strong>₹{{ total }}</strong></td>
+        </tr>
+    </table>
+
+    <div class="mt-4">
+        <a href="/" class="btn btn-secondary">Generate Another</a>
+        <a href="/bills" class="btn btn-primary">View All Bills</a> <!-- ✅ This must show -->
+    </div>
+</div>
+</body>
+</html>
